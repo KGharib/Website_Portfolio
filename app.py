@@ -51,7 +51,7 @@ def form():
     # server.sendmail("khalid.gharib1994@gmail.com", email, message)
 
     if not first_name or not last_name or not email:
-        error_statement = 'Missing Fields, try again'
+        error_statement = 'Missing Fields, please try again.'
         return render_template('subscribe.html', error_statement=error_statement
                                 ,first_name=first_name
                                 ,last_name=last_name

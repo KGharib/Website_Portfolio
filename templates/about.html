@@ -1,29 +1,262 @@
 {% extends 'base.html'%}
-{% block title %}About Me{% endblock %}
+{% block title %}Khalid Gharib{% endblock %}
 
-{% block content%}
 
-              <div class="media px-2">
-                <img src="{{url_for('static', filename='media/LinkedIn2.jpg', width=800, height=500, quality=95)}}" class="rounded float-left rounded-circle mx-auto" alt="...">
-              
+{% block content %}
+    <div class="container-fluid">
+        <div class="media px-2">
+         <img src="{{url_for('static', filename='media/LinkedIn2.jpg')}}" style="width: 11cm; height: 12cm;" class="rounded float-left rounded-circle mx-auto" alt="...">
+        </div>
+        <br/>
+        <br/><br/>
+        <div>
+            <h1 style="margin-left: 140px; font-style: Arial, Helvetica, sans-serif; font-size: 13mm; font-weight: 700; color: black;">About Me</h1>
+            <p style="margin-left: 140px; margin-right:140px; font-style: Arial, Helvetica, sans-serif; font-size: 5mm; font-weight: 700; color: black;"> 
+            <br/>
+            After finishing my Degree in Business Management at Brunel University I felt inspired to find something I was more passionate about.
+            I spent some time in self-reflection and did research on the type of career I wanted to see myself in. 
+            That's when I came across Data Science, It was a new world and once I started researching and learning about Data Science I never stopped,
+            it grew into a passion for me and I committed my self to learn everything I possibly could related to Data Science, Machine Learning and everything else I could find online.
+            <br/><br/>
+            From there I began the journey of Self-learning and spent a great deal of time doing every YouTube, Udemy, Udacity course you can think of and started applying it in multiple Kaggle projects,
+            and then I made the decision to join a Data Science Bootcamp in order to develop my skills to a level where I could see myself making it a full-time career and made some great friends along the way.
+            <br/><br/>
+            My aim is to meet both a professional and personal goal by being a positive force on people and society and achieving business goals through the skills and knowledge I have learned as a Data Scientist.  
+            </p>
+        </div>
+    </div>
+
+    </br></br>
+    <hr>
+    </br></br>
+
+    <!-- Carasoul Meta dat-->
+    <div class="container-lg my-3">
+        <h1 style="font-style: Arial, Helvetica, sans-serif; font-size: 9mm; font-weight: 400; color: black; text-align: center;">
+            My Travels</h1>
+            <div class="card-text" style="text-align: center; font-weight:700;">
                 <br/>
+                I love travelling and being a stranger in new places and getting the chance to learn about new cultures. 
+                <br/>
+                My travels have helped me in being able to communicate and interact with others in a productive way.
+                <br/><br/>
+                These are some of the pictures of the places i have been over the years</div>
+    </div>
+      <div class="container">
+      <meta charset="utf-8">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+      <title>Activate Bootstrap 4 Carousel via Data Attributes</title>
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <style>
+      .carousel{
+          background: #2f4357;
+          margin-top: 20px;
+      }
+      .carousel-item{
+          text-align: center;
+          min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+          /* max-height: 1200px; */
+      }
+      </style>
+      </head>
+    </div>
+    <!--Carasoul Meta data --> 
+
+    <!--Carasoul -->
+    <div class="container-lg my-3">
+        <div class="row"></div>
+          <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+
+              </ol>
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+              <!-- First Slide-->
+                  <div class="carousel-item active">
+                      <img src="{{url_for('static', filename='media/LinkedIn2.jpg')}}" alt="First Slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div>
+              <!-- Second Slide-->
+                  <div class="carousel-item">
+                      <img src="{{url_for('static', filename='media/Medium.jpg')}}" alt="Second Slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div>
+                  </div>
+              <!-- Third Slide--> 
+                  <div class="carousel-item">
+                      <img src="{{url_for('static', filename='media/NBA.jpg')}}" alt="Third Slide">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>third slide label</h5>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </div>
+                  </div>
+                <!-- fourth Slide--> 
+                  <div class="carousel-item">
+                    <img src="{{url_for('static', filename='media/NBA.jpg')}}" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>fourth slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+
               </div>
-              <br/><br/>
-              <div>
-              <h1 style="margin-left: 100px;">About Me</h1>
-              <p style="margin-left: 100px; margin-right:100px;"> 
-                <br/>
-                After finishing my Degree in Business Managment at Brunel University I felt very lost and uncertain of the direction i wanted to go, I spent some time in self-reflection and 
-                did research on the type of career I wanted to see myself in. Thats when I came accross Data Science, It was such a new world Once I started researching and learning about Data Science I never stopped, it grew into a passion for me and I committed my self to learning everything 
-                I could related to Data Science, Machine Learing and everything else I could find online. 
-                <br/><br/>
-                From there I began the journey of Self-learning and spent a great deal of time doing every YouTube, Udemy, Udacity course you can think of, and then I made the decesion to Join a Data Science Bootcamp
-                in order to develop my skills to a level where I could see myself making it a full-time career and made some great friends along the way.
-                <br/><br/>
-                My Aim is to be a positive force on people and society through the skils and knowledge I have learnt in Data Science and to make a difference 
-              </p>
+              <!-- Carousel controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+        </div>     
+    <!-- Carasoul -->
+
+    </br></br></br>
+    <hr>
+    </br></br>
+
+    <!--Accordion wrapper-->
+    <div class="container-lg my-3">
+        <h1 style="text-align: center;">More about me</h1>
+        <br/>
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <!-- Accordion card -->
+            <div class="card">
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingOne1">
+                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                aria-controls="collapseOne1">
+                <h5 class="mb-0">
+                    Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+                </a>
             </div>
-      <main>
-      </main>
-<br/><br/><br/><br/><br/><br/>
+            <!-- Card body -->
+            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                data-parent="#accordionEx">
+                <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                labore sustainable VHS.
+                </div>
+            </div>
+            </div>
+            <!-- Accordion card --> 
+            <!-- Accordion card -->
+            <div class="card">
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                aria-expanded="false" aria-controls="collapseTwo2">
+                <h5 class="mb-0">
+                    Collapsible Group Item #2 <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+                </a>
+            </div>
+            <!-- Card body -->
+            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                data-parent="#accordionEx">
+                <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                labore sustainable VHS.
+                </div>
+            </div>
+            </div>
+            <!-- Accordion card -->
+            <!-- Accordion card -->
+            <div class="card">
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingThree3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                aria-expanded="false" aria-controls="collapseThree3">
+                <h5 class="mb-0">
+                    Collapsible Group Item #3 <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+                </a>
+            </div>
+            <!-- Card body -->
+            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                data-parent="#accordionEx">
+                <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                labore sustainable VHS.
+                </div>
+            </div>
+            </div>
+            <!-- Accordion card -->
+        </div>
+    </div>
+    <!-- Accordion wrapper -->
+
+</br></br></br></br>
 {% endblock %}
+
+
+
+
+
+
+<!-- 
+            <div class='container'>
+                <h1>Subscribe!</h1>
+                <p>subscribe to keep uptodate with my blogs and what im up to!</p>
+            {% if error_statement %}
+                <div class="alert alert-danger" role="alert">
+                    <h2 class="alert-heading">Error...</h2>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>{{ error_statement }}</strong> You should check the fields below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+              </div>
+                {% endif %}
+              <div class='container'>
+                  <form action='/form' method='POST'>
+                      <div class="form-group">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" name='first_name', value="{{ first_name }}">
+                      </div>
+                      <div class="form-group">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" name='last_name', value="{{ last_name }}">
+                      </div>
+                      <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name='email', value="{{ email }}">
+                      </div>
+                      <div class="form-group form-check">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+              </div> -->
+<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
+
+
